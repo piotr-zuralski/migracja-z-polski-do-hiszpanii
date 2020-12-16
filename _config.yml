@@ -1,0 +1,160 @@
+source: ./src/
+encoding: "utf-8"
+timezone: Europe/Warsaw
+lang: en-GB
+lsi: true
+safe: false
+incremental: true
+disable_disk_cache: false
+# environment: development
+# environment: production
+
+markdown: CommonMark
+markdown_ext: "md"
+commonmark:
+  options: ["SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table"]
+
+author: "Piotr Żuralski"
+
+title: "Piotr Żuralski – Senior Software Engineer"
+description: "Piotr Żuralski, Senior Developer, Engineer, with over 10 years experience in commercial web development"
+
+languages: ["en", "pl", "es", "de"]
+exclude_from_localizations: ["files", "assets", "resources"]
+
+collections:
+  pl:
+    output: true
+    permalink: pl/:title:output_ext
+  en:
+    output: true
+    permalink: en/:title:output_ext
+
+collections_dir: collections
+# plugins_dir: _plugins
+# layouts_dir: _layouts
+# data_dir: _data
+# plugins_dir         : ./src/_plugins
+# layouts_dir         : ./src/_layouts
+# data_dir            : ./src/_data
+# includes_dir        : ./src/_includes
+
+
+twitter:
+  username: piotr_zuralski
+
+webmaster_verifications:
+  google: x_sZsZidR01cJyzgbqip2AHTGLgAvs-8f0razmbHUpM
+  bing: 057036BF9DB13D64C6CA4552C61AC17A
+#  alexa: 1234
+#  yandex: 1234
+#  baidu: 1234
+
+# Filtering Content
+show_drafts         : false
+limit_posts         : 0
+future              : false
+unpublished         : false
+
+defaults:
+  -
+    scope:
+      path:      "assets/css/*"
+    values:
+      sitemap:   false
+      permalink: pretty
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+#      permalink: /:locale/:categories/:title:output_ext
+      layout: "default"
+      author: "Piotr Żuralski"
+      excerpt_separator: "<!--more-->"
+      published: false
+      unpublished: true
+  -   scope:
+        path: "_pages/"
+        type: "pages"
+      values:
+        layout:    "default"
+  -
+    scope:
+      path: _pages/en
+      type: pages
+    values:
+      layout: "page"
+      lang:      en-GB
+      locale:    en
+  #     # categories: ""
+  #     # permalink:  "/:locale/:categories/:title:output_ext"
+  -
+    scope:
+      path: _pages/pl
+      type: "pages"
+    values:
+      layout: "page"
+      lang:    pl-PL
+      locale:  pl
+  # -
+  #   scope:
+  #     path: "_pages/es"
+  #     type: "pages"
+  #   values:
+  #     layout: "page"
+  #     lang:      es-ES
+  #     locale:    es
+  # -
+  #   scope:
+  #     path: "posts"
+  #     type: "posts"
+  #   values:
+  #     layout: "post"
+  #     lang:      en-GB
+  #     locale:    en
+  #     # categories: ""
+  #     # permalink:  "/:locale/:categories/:title:output_ext"
+  # -
+  #   scope:
+  #     path: "projects"
+  #     type: "pages"
+  #   values:
+  #     layout: "project"
+  #     lang:      en-GB
+  #     locale:    en
+  #     # categories: ""
+  #     # permalink:  "/:locale/:categories/:title:output_ext"
+
+exclude:
+  - ".github/"
+  - ".history/"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "node_modules"
+  - "TODO.md"
+  - "README.md"
+  - "LICENSE"
+  - "LICENSE.md"
+  - "Makefile"
+  - ".jekyll-cache"
+  - ".jekyll-metadata"
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+include:
+  - _pages
+
+plugins:
+  - jekyll-commonmark
+  - jekyll-include-cache
+  - jekyll-archives
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-time-to-read
+  - jekyll-redirect-from
+  - jekyll-last-modified-at
+  - jekyll-paginate

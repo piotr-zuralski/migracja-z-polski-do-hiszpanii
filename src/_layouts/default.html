@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="{{ site.lang|default:'en_UK' }}">
+
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+    {% include navigation.html %}
+    <div class="container-lg px-3 my-5 markdown-body">
+        {% if site.title and site.title != page.title %}
+        <h1><a href="{{ '/'|absolute_url }}">{{ site.title }}</a></h1>
+        {% endif %}
+        <!-- -->
+        {{ content }}
+    </div>
+
+    <div>
+        <p>Data utworzenia: {{ page.date }}, data aktualizacji: {{ page.last_modified_at }}, data sprawdzenia: {{ page.date-checked }}</p>
+    </div>
+
+    {% include debug.html %}
+
+    <footer class="page-footer">
+        <ul class="site-footer-links right">
+            <li><a href="/about" title="About">About</a></li>
+        </ul>
+
+        <ul class="site-footer-links">
+            currentYear: {{ site.currentYear }} <br> experience: {{ site.experience }} <br>
+            <li>Copyright &copy; 2007-<span id="current-year">{{ site.time|date: '%Y' }}</span> <span>{{ site.author.name }}</span>.</li>
+            <li><a href="/contact" title="Contact">Contact</a></li>
+        </ul>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>
+        anchors.add();
+    </script>
+</body>
+
+</html>
