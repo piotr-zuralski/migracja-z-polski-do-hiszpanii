@@ -9,20 +9,22 @@ disable_disk_cache: false
 # environment: development
 # environment: production
 
-markdown: CommonMark
+markdown: kramdown
 markdown_ext: "md"
-commonmark:
-  options: ["SMART", "FOOTNOTES"]
-  extensions: ["strikethrough", "autolink", "table"]
+
+# markdown: CommonMark
+# commonmark:
+#   options: ["SMART", "FOOTNOTES"]
+#   extensions: ["strikethrough", "autolink", "table"]
 
 github_username: "piotr-zuralski"
-repository: "https://github.com/piotr-zuralski/migracja-z-polski-do-hiszpanii"
+repository: "piotr-zuralski/migracja-z-polski-do-hiszpanii"
 author: "Piotr Żuralski"
 
-title: "Piotr Żuralski – Senior Software Engineer"
-description: "Piotr Żuralski, Senior Developer, Engineer, with over 10 years experience in commercial web development"
+title: "Migracja z Polski do Hiszpanii"
+description: "Informacje na temat migracji z Polski do Hiszpanii, emigracji z Polski"
 
-languages: ["en", "pl", "es", "de"]
+languages: ["en", "pl"]
 exclude_from_localizations: ["files", "assets", "resources"]
 
 collections:
