@@ -11,7 +11,6 @@ sitemap:
   priority: 0.8
 
 published         : false
-unpublished         : true
 
 breadcrumbs:
   - url: page.url

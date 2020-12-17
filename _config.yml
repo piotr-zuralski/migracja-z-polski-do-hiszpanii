@@ -36,7 +36,12 @@ collections:
     permalink: en/:title:output_ext
 
 collections_dir: collections
+
+# github
 includes_dir        : ./src/_includes
+# local
+# includes_dir        : _includes
+
 # plugins_dir: _plugins
 # layouts_dir: _layouts
 # data_dir: _data
@@ -55,10 +60,10 @@ webmaster_verifications:
 #  baidu: 1234
 
 # Filtering Content
-show_drafts         : false
-limit_posts         : 0
-future              : false
-unpublished         : false
+show_drafts: false
+limit_posts: 0
+future:      false
+published:   false
 
 defaults:
   -
@@ -76,7 +81,6 @@ defaults:
       author: "Piotr Żuralski"
       excerpt_separator: "<!--more-->"
       published: false
-      unpublished: true
   -   scope:
         path: "_pages/"
         type: "pages"
@@ -90,6 +94,7 @@ defaults:
       layout: "page"
       lang:      en-GB
       locale:    en
+      permalink: /{:locale}/{:slug}{:output_ext}
   #     # categories: ""
   #     # permalink:  "/:locale/:categories/:title:output_ext"
   -
@@ -100,6 +105,7 @@ defaults:
       layout: "page"
       lang:    pl-PL
       locale:  pl
+      permalink: /{:locale}/{:slug}{:output_ext}
   # -
   #   scope:
   #     path: "_pages/es"

@@ -1,6 +1,6 @@
 ---
 published: true
-slug: media-strony-internetowe
+slug: media/strony-internetowe
 ref: media-strony-internetowe
 date: 2020-12-14 11:34
 checked_at: 2020-12-14 11:34
