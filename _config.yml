@@ -1,4 +1,3 @@
-source: ./src/
 encoding: "utf-8"
 timezone: Europe/Warsaw
 lang: en-GB
@@ -39,9 +38,10 @@ collections:
 collections_dir: collections
 
 # github
-# includes_dir        : ./src/_includes
+# includes_dir: ./src/_includes
 # local
-includes_dir        : _includes
+includes_dir: _includes
+source:       ./src/
 
 # plugins_dir: _plugins
 # layouts_dir: _layouts
