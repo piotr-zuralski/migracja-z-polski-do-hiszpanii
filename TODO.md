@@ -17,3 +17,11 @@
   - <https://github.com/liamzebedee/jekyll-i18n>
   - <https://forestry.io/blog/creating-a-multilingual-blog-with-jekyll/>
   - <https://polyglot.untra.io/seo/>
+
+
+- GitHub Actions
+  - [x] <https://github.com/marketplace/actions/jekyll-deploy>
+  - [ ] <https://github.com/marketplace/actions/jekyll-actions>
+  - [ ] <https://github.com/marketplace/actions/jekyll-action>
+  - [ ] <https://github.com/MichaelCurrin/jekyll-actions-quickstart>
+  - [ ] <https://jekyllrb.com/docs/continuous-integration/github-actions/>

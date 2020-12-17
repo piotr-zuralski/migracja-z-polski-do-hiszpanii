@@ -20,13 +20,6 @@ install: clean
 
 install-and-serve: install serve
 
-test:
-	# act -P ubuntu-latest=nektos/act-environments-ubuntu:18.04
-	# act -j lint -P ubuntu-latest=shivammathur/node:latest
-	# act -P ubuntu-latest=shivammathur/node:latest
-	# ACTIONS_RUNNER_DEBUG=true
-	act -P ubuntu-latest=nektos/act-environments-ubuntu:18.04 
-
 s serve:
 	# JEKYLL_ENV=development 
 	bundle exec jekyll serve --incremental --verbose --trace
@@ -38,3 +31,10 @@ dev build-dev: install
 
 prod build-prod: install
 	JEKYLL_ENV=production bundle exec jekyll build --incremental --verbose --trace
+
+test github-actions:
+	# act -P ubuntu-latest=nektos/act-environments-ubuntu:18.04
+	# act -j lint -P ubuntu-latest=shivammathur/node:latest
+	# act -P ubuntu-latest=shivammathur/node:latest
+	# ACTIONS_RUNNER_DEBUG=true
+	act -P ubuntu-latest=nektos/act-environments-ubuntu:18.04 -j github-pages lint 

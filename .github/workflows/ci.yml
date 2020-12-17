@@ -20,11 +20,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: github/super-linter@v3
+        continue-on-error: true
         id: lint
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          FILTER_REGEX_EXCLUDE: .*(vendor|\.old|\.vscode|\.idea/).*
+          FILTER_REGEX_EXCLUDE: .*(vendor|\.old|\.vscode|\.idea/|Gemfile.lock|LICENSE).*
 
   github-pages:
     runs-on: ubuntu-latest
@@ -42,5 +43,5 @@ jobs:
         env:
           JEKYLL_ENV: production
           GH_PAGES_TOKEN: "${{ secrets.MY_GITHUB_TOKEN }}"
-        with:
-          source-dir: "./src/"
+        # with:
+        #   source-dir: "./src/"
