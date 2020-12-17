@@ -1,1 +1,1 @@
-Sitemap: https://github.com/pages/piotr-zuralski/migracja-z-polski-do-hiszpanii/sitemap.xml
+Sitemap: https://github.com/migracja-z-polski-do-hiszpanii/sitemap.xml
