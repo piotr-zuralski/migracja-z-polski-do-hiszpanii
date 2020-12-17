@@ -6,6 +6,7 @@ use:
 published: true
 slug: mapa-strony
 ref: sitemap
+permalink: /pl/mapa-strony.html
 
 redirect_from:
   - /mapa-strony
@@ -50,3 +51,5 @@ breadcrumbs:
   * <a href="{{ item.url }}" title="{{ item.title | escape  }}">{{ item.title }}</a>
 {% endif %}
 {% endfor %}
+
+{% include _autolink_pl.md %}

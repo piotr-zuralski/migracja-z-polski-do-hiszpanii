@@ -1,10 +1,12 @@
 ---
 published: true
-slug: dzialalnosc-gospodarcza
+slug: podstawy/dzialalnosc-gospodarcza
+ref: dependencies-dzialalnosc-gospodarcza
+permalink: /pl/podstawy/dzialalnosc-gospodarcza.html
 ---
 
 # Gdziałalność gospodarcza
 
 - <https://prawohiszpanskie.pl/jednoosobowa-dzialalnosc-gospodarcza-w-hiszpanii/>
 
-{% include _autolink.md %}
+{% include _autolink_pl.md %}

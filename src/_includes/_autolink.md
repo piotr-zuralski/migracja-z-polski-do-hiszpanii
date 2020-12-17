@@ -1,2 +1,3 @@
-{% include _acronyms.md %}
-{% include _links.md %}
+{% comment %}
+{% include _autolink_pl.md %}
+{% endcomment %}

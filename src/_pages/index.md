@@ -20,7 +20,7 @@ breadcrumbs:
 
 # Home
 
-{% include _autolink.md %}
+{% include _autolink_pl.md %}
 
 <!--
   currentYear: {{ site.currentYear }}

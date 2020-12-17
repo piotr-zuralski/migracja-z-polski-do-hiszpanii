@@ -33,10 +33,8 @@ s serve:
 
 build: build-prod
 
-build-dev: install
-	# JEKYLL_ENV=development 
-	bundle exec jekyll build --incremental --verbose --trace
+dev build-dev: install
+	JEKYLL_ENV=development bundle exec jekyll build --incremental --verbose --trace --future --unpublished
 
-build-prod: install
-	# JEKYLL_ENV=production 
-	bundle exec jekyll build --incremental --verbose --trace
+prod build-prod: install
+	JEKYLL_ENV=production bundle exec jekyll build --incremental --verbose --trace

@@ -2,16 +2,14 @@
 date: 2020-12-17 11:34
 last_modified_at: 2020-12-17 11:34
 description: "Informacje na temat migracji z Polski do Hiszpanii, emigracji z Polski"
-lang: pl
-ref: home
-# permalink: index
+published: true
 slug: index
+ref: index
+permalink: /pl/index.html
 
 sitemap:
   changefreq: weekly
-  priority: 0.8
-
-published         : true
+  priority: 0.5
 
 breadcrumbs:
   - url: page.url
@@ -21,4 +19,4 @@ breadcrumbs:
 
 # Strona główna
 
-{% include _autolink.md %}
+{% include _autolink_pl.md %}
