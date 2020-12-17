@@ -18,8 +18,7 @@ markdown_ext: "md"
 github_username: "piotr-zuralski"
 repository: "piotr-zuralski/migracja-z-polski-do-hiszpanii"
 author: "Piotr Żuralski"
-
-# baseurl: "/migracja-z-polski-do-hiszpanii" # the subpath of your site, e.g. /blog
+baseurl: "/migracja-z-polski-do-hiszpanii/" # the subpath of your site, e.g. /blog
 
 title: "Migracja z Polski do Hiszpanii"
 description: "Informacje na temat migracji z Polski do Hiszpanii, emigracji z Polski"
