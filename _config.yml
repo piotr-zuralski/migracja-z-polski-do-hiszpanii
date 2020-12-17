@@ -39,9 +39,9 @@ collections:
 collections_dir: collections
 
 # github
-includes_dir        : ./src/_includes
+# includes_dir        : ./src/_includes
 # local
-# includes_dir        : _includes
+includes_dir        : _includes
 
 # plugins_dir: _plugins
 # layouts_dir: _layouts
