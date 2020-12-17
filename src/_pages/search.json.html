@@ -10,15 +10,9 @@ permalink: /search.json
 {% assign everything = posts | concat: pages | sort: "date" %}
 
 [ 
-  {% if item }
+  {% if item %}
     {% for item in everything %}
-      {% if 
-        (item.search and item.search != nil and item.search != "exclude") 
-        and (item.sitemap and item.sitemap != nil and item.sitemap != false)
-        and (item.layout and item.layout != nil and item.layout != null)
-        and (item.title and item.title != nil)
-        and (item.url != page.url) 
-      %}
+      {% if item.search != "exclude" and item.sitemap != false and item.layout != null and item.title != nil and item.url != page.url %}
         {
           "title": "{{ item.title | escape }}",
           "category": "{{ item.category }}",
@@ -27,7 +21,7 @@ permalink: /search.json
           "date": "{{ item.date }}"
         } 
       {% endif %}
-      {% unless forloop.last %}, {% endunless %}
+      {% if forloop.last == true %}, {% endif %}
     {% endfor %}
   {% endif %}
 ]
