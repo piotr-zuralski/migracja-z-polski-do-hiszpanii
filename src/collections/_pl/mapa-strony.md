@@ -1,11 +1,23 @@
 ---
-date: 2019-05-26 11:34
+date: 2020-12-17 11:34
 use:
   - pages
   - posts
 published: true
 slug: mapa-strony
 ref: sitemap
+
+redirect_from:
+  - /mapa-strony
+
+sitemap:
+  changefreq: daily
+  priority: 0.8
+
+breadcrumbs:
+  - url: page.url
+    title: page.title
+    type: WebPage
 ---
 
 # Mapa strony

@@ -1,0 +1,33 @@
+---
+layout: null
+search: exclude
+sitemap: false
+permalink: /search.json
+---
+
+{% assign pages = site.pages | compact %}
+{% assign posts = site.posts | compact %}
+{% assign everything = posts | concat: pages | sort: "date" %}
+
+[ 
+  {% if item }
+    {% for item in everything %}
+      {% if 
+        (item.search and item.search != nil and item.search != "exclude") 
+        and (item.sitemap and item.sitemap != nil and item.sitemap != false)
+        and (item.layout and item.layout != nil and item.layout != null)
+        and (item.title and item.title != nil)
+        and (item.url != page.url) 
+      %}
+        {
+          "title": "{{ item.title | escape }}",
+          "category": "{{ item.category }}",
+          "tags": "{{ item.tags | join: ', ' }}",
+          "url": "{{ site.baseurl }}{{ item.url }}",
+          "date": "{{ item.date }}"
+        } 
+      {% endif %}
+      {% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  {% endif %}
+]

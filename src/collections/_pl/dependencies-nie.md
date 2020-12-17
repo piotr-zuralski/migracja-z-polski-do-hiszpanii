@@ -1,5 +1,4 @@
 ---
-layout: page
 published: true
 ref: dependencies-nie
 slug: podstawy/numer-nie
