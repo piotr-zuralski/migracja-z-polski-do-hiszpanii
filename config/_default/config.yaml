@@ -6,11 +6,12 @@ disablePathToLower: true
 defaultContentLanguageInSubdir: true
 disableHugoGeneratorInject: true
 enableRobotsTXT: true
-theme: ananke
+# theme: ananke
+theme: airspace-hugo
 publishdir: output
 
 author:
-    name: Piotr Żuralski
+  name: Piotr Żuralski
 
 languages:
   en:
