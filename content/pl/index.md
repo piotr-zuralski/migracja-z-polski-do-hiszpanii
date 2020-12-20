@@ -1,7 +1,9 @@
 ---
-date: 2020-12-20T00:02:54+01:00
+date: 2020-12-17T11:34:54+01:00
 title: "Strona główna"
-description: ""
+description: "Informacje na temat migracji z Polski do Hiszpanii, emigracji z Polski"
+# slug: index
+# ref: index
 ---
 
 # Strona główna
