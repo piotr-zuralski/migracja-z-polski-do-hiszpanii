@@ -7,3 +7,5 @@ _site/
 .jekyll-metadata
 public/
 output/
+_src/
+resources/_gen/

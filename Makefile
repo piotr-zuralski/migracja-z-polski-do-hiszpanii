@@ -21,10 +21,10 @@ s serve:
 build: build-prod
 
 dev build-dev: install
-	hugo -D
+	HUGO_ENV=development hugo -D
 
 prod build-prod: install
-	hugo -D
+	HUGO_ENV=production hugo -D
 
 test github-actions:
 	# act -P ubuntu-latest=nektos/act-environments-ubuntu:18.04
