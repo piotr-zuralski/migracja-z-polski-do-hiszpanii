@@ -6,31 +6,25 @@ h help:
 	@egrep '^\S|^$$' Makefile
 
 clean:
-	rm -rf _site/ src/_site/ output/
+	rm -rf output/
 
 install: clean
-	sudo apt-get install ruby ruby-all-dev gem -yq >/dev/null 
-	sudo gem install bundler >/dev/null
-	sudo gem update >/dev/null
-	bundle config
-	# bundle config set --local path vendor/bundle
-	bundle install >/dev/null 
-	# bundle exec jekyll help
-	# bundle exec jekyll serve --incremental --verbose --trace
+	#sudo snap install hugo >/dev/null
+	realpath hugo || brew install hugo
+	hugo version
 
 install-and-serve: install serve
 
 s serve:
-	# JEKYLL_ENV=development 
-	bundle exec jekyll serve --incremental --verbose --trace
+	hugo server -vvv --verbose
 
 build: build-prod
 
 dev build-dev: install
-	JEKYLL_ENV=development bundle exec jekyll build --incremental --verbose --trace --future --unpublished
+	hugo -D
 
 prod build-prod: install
-	JEKYLL_ENV=production bundle exec jekyll build --incremental --verbose --trace
+	hugo -D
 
 test github-actions:
 	# act -P ubuntu-latest=nektos/act-environments-ubuntu:18.04

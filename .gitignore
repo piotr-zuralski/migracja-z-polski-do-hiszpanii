@@ -5,3 +5,5 @@ _site/
 .history/
 _site/
 .jekyll-metadata
+public/
+output/
