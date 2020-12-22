@@ -1,0 +1,48 @@
+title: Migracja z Polski do Hiszpanii
+copyright: 
+defaultContentLanguage: pl
+languageCode: pl-PL
+baseURL: https://piotr-zuralski.github.io/
+# baseURL: https://piotr-zuralski.github.io/migracja-z-polski-do-hiszpanii/
+disablePathToLower: false
+defaultContentLanguageInSubdir: true
+disableHugoGeneratorInject: true
+disableAliases: true
+enableRobotsTXT: true
+# theme: ananke
+# theme: airspace-hugo
+theme: herring-cove
+publishdir: output
+
+author:
+  name: Piotr Żuralski
+
+languages:
+  en:
+    params:
+      # linkedin: https://linkedin.com/whoever
+    # baseURL: https://piotr-zuralski.github.io/migracja-z-polski-do-hiszpanii/en/
+    title: Migration from Poland to Spain
+    languageName: English
+    contentDir: content/en/
+    # permalinks: /en/:slug.html
+    weight: 2
+  pl:
+    params:
+      linkedin: https://linkedin.com/fr/whoever
+      navigation:
+        help: Pomoc
+    # baseURL: https://piotr-zuralski.github.io/migracja-z-polski-do-hiszpanii/pl/
+    title: Migracja z Polski do Hiszpanii
+    languageName: Polski
+    contentDir: content/pl/
+    # permalinks: /pl/:slug.html
+    weight: 1
+params:
+  navigation:
+    help: Help
+
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
