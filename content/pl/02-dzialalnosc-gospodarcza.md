@@ -1,8 +1,8 @@
 ---
 published: true
 slug: podstawy/dzialalnosc-gospodarcza
-ref: dependencies-dzialalnosc-gospodarcza
-permalink: /pl/podstawy/dzialalnosc-gospodarcza.html
+translationKey: dependencies-dzialalnosc-gospodarcza
+url: /pl/podstawy/dzialalnosc-gospodarcza.html
 ---
 
 # Gdziałalność gospodarcza

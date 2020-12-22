@@ -1,8 +1,8 @@
 ---
 published: true
 slug: media/internet-i-tv
-ref: media-internet-i-tv
-permalink: /pl/media/internet-i-tv.html
+translationKey: media-internet-i-tv
+url: /pl/media/internet-i-tv.html
 ---
 
 # Internet i TV

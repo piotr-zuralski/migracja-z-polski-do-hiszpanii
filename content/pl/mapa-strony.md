@@ -5,8 +5,8 @@ use:
   - posts
 published: true
 slug: mapa-strony
-ref: sitemap
-permalink: /pl/mapa-strony.html
+translationKey: sitemap
+url: /pl/mapa-strony.html
 
 redirect_from:
   - /mapa-strony

@@ -1,8 +1,8 @@
 ---
 published: true
 slug: podstawy/numer-nie
-ref: dependencies-nie
-permalink: /pl/podstawy/numer-nie.html
+translationKey: basic-nie
+url: /pl/podstawy/numer-nie.html
 ---
 
 # Numer NIE

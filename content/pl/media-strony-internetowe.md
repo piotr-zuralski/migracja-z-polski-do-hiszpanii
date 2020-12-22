@@ -1,10 +1,10 @@
 ---
 published: true
 slug: media/strony-internetowe
-ref: media-strony-internetowe
+translationKey: media-strony-internetowe
 date: 2020-12-14 11:34
 checked_at: 2020-12-14 11:34
-permalink: /pl/media/strony-internetowe.html
+url: /pl/media/strony-internetowe.html
 
 sitemap:
   changefreq: weekly
