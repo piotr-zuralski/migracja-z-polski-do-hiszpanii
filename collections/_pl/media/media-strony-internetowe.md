@@ -18,9 +18,7 @@ breadcrumbs:
 
 # Strony internetowe
 
-## Zakupy
-
-### Mieszkania - wynajem, kupno, sprzedaż
+## Mieszkania - wynajem, kupno, sprzedaż
 
 Odpowiednik OtoDom, Morizon w Hiszpanii:
 
@@ -28,27 +26,27 @@ Odpowiednik OtoDom, Morizon w Hiszpanii:
 - <https://www.fotocasa.es/>
 - <https://www.habitaclia.com/>
 
-### Moda - odzież, ubrania
+## Moda - odzież, ubrania
 
 - <https://www.videdressing.com/>
 
-### Ogłoszenia
+## Ogłoszenia
 
 Odpowiednik OLX w Hiszpanii:
 
 - <https://www.milanuncios.com/>
   - <https://www.vibbo.com/>
 
-### Porównywanie usług
+## Porównywanie usług
 
 - <https://kelisto.es/>
 
 
-### Praca
+## Praca
 
 - <https://www.infojobs.net/>
 
-### Portale aukcyjne
+## Portale aukcyjne
 
 Odpowiednik Allegro w Hiszpanii:
 
@@ -63,16 +61,13 @@ Odpowiednik Allegro w Hiszpanii:
 | col 3 is | right-aligned |    $1 |
 {% endcomment %}
 
-### Wiadomości
+## Wiadomości
 
-#### Po hiszpańsku
+### Po hiszpańsku
 
-| Polska strona          | Hiszpańska strona      |
-|------------------------|:----------------------:|
-| <https://wyborcza.pl/> | <https://elpais.com/>  |
+| Polska strona                       | Po hiszpańsku                       | Po angielsku                      |
+|-------------------------------------|:-----------------------------------:|----------------------------------:|
+| <https://wyborcza.pl/>              | <https://elpais.com/>               | <https://english.elpais.com/>     |
 
-#### Po angielsku
-
-- <https://english.elpais.com/>
 
 {% include _autolink_pl.md %}

@@ -1,6 +1,6 @@
 ---
-published: true
 date: 2020-12-17 11:34
+published: true
 slug: mapa-strony
 ref: sitemap
 permalink: /pl/mapa-strony.html
@@ -20,20 +20,20 @@ breadcrumbs:
 
 # Mapa strony
 
-{% assign pages = site.pages | sort: "title" %}
-{% assign posts = site.posts | sort: "title" %}
+{% assign collections = site.collections | where_exp:'collection','collection.output != false' %}
+{% assign posts = site.posts | where_exp:'post','post.sitemap != false' %}
+{% assign pages = site.html_pages | where_exp:'page','page.sitemap != false' | where_exp:'page','page.url != "/404.html"' %}
+{% assign files = page.static_files | where_exp:'page','page.sitemap != false' | where_exp:'page','page.name != "404.html"' %}
 
-{% for item in pages %} 
-{% if item.title != nil and item.url != page.url and item.url != "/404.html" %}
-  * <a href="{{ item.url }}" title="{{ item.title | escape }}" lang="{{ item.lang }}">{{ item.title }}</a>
-{% endif %}
+{% assign _everything = pages | concat: posts | sort: "title" %}
+
+{% for collection in collections %}
+    {% assign docs = collection.docs | where_exp:'doc','doc.sitemap != false' %}
+    {% assign _everything = _everything | concat: docs | sort: "title" %}
 {% endfor %}
 
-
-{% for item in posts %} 
-{% if item.title != nil and item.url != page.url and item.url != "/404.html" %}
-  * <a href="{{ item.url }}" title="{{ item.title | escape  }}" lang="{{ item.lang }}">{{ item.title }}</a>
-{% endif %}
+{% for item in _everything %} 
+  * <a href="{{ item.url | replace:'/index.html','/' | absolute_url }}" title="{{ item.title | escape  }}" lang="{{ item.lang }}">{{ item.title }}</a>
 {% endfor %}
 
 {% include _autolink_pl.md %}

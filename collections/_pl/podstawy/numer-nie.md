@@ -4,6 +4,8 @@ date: 2020-12-17 11:34
 slug: podstawy/numer-nie
 ref: dependencies-nie
 permalink: /pl/podstawy/numer-nie.html
+lang: pl-PL
+title: Numer NIE
 ---
 
 # Numer NIE
