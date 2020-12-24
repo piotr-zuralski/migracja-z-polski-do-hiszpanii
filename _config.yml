@@ -18,20 +18,27 @@ markdown_ext: "md"
 github_username: "piotr-zuralski"
 repository: "piotr-zuralski/migracja-z-polski-do-hiszpanii"
 author: "Piotr Żuralski"
-baseurl: "/migracja-z-polski-do-hiszpanii/" # the subpath of your site, e.g. /blog
+# baseurl: "/migracja-z-polski-do-hiszpanii" # the subpath of your site, e.g. /blog
 
 title: "Migracja z Polski do Hiszpanii"
 description: "Informacje na temat migracji z Polski do Hiszpanii, emigracji z Polski"
 
 languages: ["en", "pl"]
+defaultLang: pl
 exclude_from_localizations: ["files", "assets", "resources"]
 
 collections:
   pl:
     output: true
+    lang:    pl-PL
+    locale:  pl
+    permalink: /pl/:slug
     # permalink: pl/:title:output_ext
   en:
     output: true
+    lang:      en-GB
+    locale:    en
+    permalink: /en/:slug
     # permalink: en/:title:output_ext
 
 collections_dir: collections
@@ -39,8 +46,8 @@ collections_dir: collections
 # github
 # includes_dir: ./src/_includes
 # local
-includes_dir: _includes
-source:       ./src/
+# includes_dir: _includes
+# source:       ./src/
 
 # plugins_dir: _plugins
 # layouts_dir: _layouts

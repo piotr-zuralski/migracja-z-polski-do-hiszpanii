@@ -1,15 +1,6 @@
 nav:
   - title: Home
-    url: 
-
-  - title: Projects
-    url: project
-
-  - title: Companies
-    url: company
-
-  - title: Technologies
-    url: technology
+    url: /
 
   - title: Contact
     url: contact

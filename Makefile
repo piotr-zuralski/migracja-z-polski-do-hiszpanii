@@ -9,8 +9,8 @@ clean:
 	rm -rf _site/ src/_site/ output/
 
 install: clean
-	sudo apt-get install ruby ruby-all-dev gem -yq >/dev/null 
-	sudo gem install bundler >/dev/null
+	command -v ruby || sudo apt-get install ruby ruby-all-dev gem -yq >/dev/null 
+	command -v bundler || sudo gem install bundler >/dev/null
 	sudo gem update >/dev/null
 	bundle config
 	# bundle config set --local path vendor/bundle

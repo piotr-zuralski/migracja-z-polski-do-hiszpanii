@@ -1,16 +1,12 @@
 <!doctype html>
-<html lang="{{ site.lang|default:'en-UK' }}">
+<html lang="{{ site.lang|default:'en-GB' }}">
 
 <head>
-    {% comment %}
-    <title>Default layout title</title>
-    {% endcomment %}
-    <!-- -->
     {% include head.html %}
 </head>
 
 <body>
-    {% include navigation.html %}
+    {% comment %}{% include navigation.html %}{% endcomment %}
     <div class="container-lg px-3 my-5 markdown-body">
         {% if site.title and site.title != page.title %}
         <h1><a href="{{ '/'|absolute_url }}">{{ site.title }}</a></h1>
@@ -20,7 +16,13 @@
     </div>
 
     <div>
-        <p>Data utworzenia: {{ page.date }}, data aktualizacji: {{ page.last_modified_at }}, data sprawdzenia: {{ page.checked_at }}</p>
+        <p>
+            Data utworzenia: {{ page.date }}
+            <!-- -->
+            {% if page.last_modified_at %}, data aktualizacji: {{ page.last_modified_at }} {% endif %}
+            <!-- -->
+            {% if page.checked_at %}, data sprawdzenia: {{ page.checked_at }} {% endif %}.
+        </p>
     </div>
 
     <footer class="page-footer">
