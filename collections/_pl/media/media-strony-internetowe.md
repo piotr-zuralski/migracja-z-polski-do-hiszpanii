@@ -23,35 +23,38 @@ breadcrumbs:
 Odpowiednik OtoDom, Morizon w Hiszpanii:
 
 
-- <https://www.fotocasa.es/>
-- <https://www.habitaclia.com/>
+- <http://www.fotocasa.es>
+- <http://www.habitaclia.com>
 
 ## Moda - odzież, ubrania
 
-- <https://www.videdressing.com/>
+- <http://www.videdressing.com>
 
 ## Ogłoszenia
 
 Odpowiednik OLX w Hiszpanii:
 
-- <https://www.milanuncios.com/>
-  - <https://www.vibbo.com/>
+- <http://www.milanuncios.com>
+  - <http://www.vibbo.com>
 
 ## Porównywanie usług
 
-- <https://kelisto.es/>
+- <http://kelisto.es>
 
 
 ## Praca
 
-- <https://www.infojobs.net/>
+- <http://www.infojobs.net>
+- <http://glassdoor.com>
+- <http://es.indeed.com>
+- <http://tecnoempleo.com>
 
 ## Portale aukcyjne
 
 Odpowiednik Allegro w Hiszpanii:
 
-- <https://www.amazon.es/>
-- <https://www.ebay.es/>
+- <http://www.amazon.es>
+- <http://www.ebay.es>
 
 {% comment %}
 | Polska strona   |      Are      |  Cool |
@@ -63,11 +66,38 @@ Odpowiednik Allegro w Hiszpanii:
 
 ## Wiadomości
 
-### Po hiszpańsku
+| Polska strona        | Po hiszpańsku       | Po angielsku                |
+|:--------------------:|:-------------------:|:---------------------------:|
+| <http://wyborcza.pl> | <http://elpais.com> | <http://english.elpais.com> |
 
-| Polska strona                       | Po hiszpańsku                       | Po angielsku                      |
-|-------------------------------------|:-----------------------------------:|----------------------------------:|
-| <https://wyborcza.pl/>              | <https://elpais.com/>               | <https://english.elpais.com/>     |
+
+## Zakupy
+
+### AGD, RTV
+
+- <http://mediamarkt.es>
+
+### Spożywcze
+
+- <http://mercadona.es>
+  - <http://tienda.mercadona.es>
+  - <http://telecompra.mercadona.es>
+- <http://lidl.es>
+
+### 
+
+| Polska strona        | Po hiszpańsku               |
+|--------------------|---------------------------|
+| <http://lidl-sklep.pl> | <http://lidl.es/es/onlineshop> |
+
+## Zdrowie
+
+### Krwiodawstwo / Donación de sangre
+
+| Polska strona        | Po hiszpańsku               |
+|:--------------------:|:---------------------------:|
+| <http://krew.gda.pl> | <http://donantesmalaga.org> |
+| <http://krwiodawcy.org> | <http://fedsang.org> |
 
 
 {% include _autolink_pl.md %}
