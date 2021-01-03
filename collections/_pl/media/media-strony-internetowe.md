@@ -16,35 +16,39 @@ breadcrumbs:
     type: WebPage
 ---
 
+# Finanse
+
+## Banki
+
 # Strony internetowe
 
 ## Mieszkania - wynajem, kupno, sprzedaż
 
 Odpowiednik OtoDom, Morizon w Hiszpanii:
 
-
-- <http://www.fotocasa.es>
-- <http://www.habitaclia.com>
+- <http://fotocasa.es>
+- <http://habitaclia.com>
+- <http://airbnb.com>
+- <http://propify.es>
 
 ## Moda - odzież, ubrania
 
-- <http://www.videdressing.com>
+- <http://videdressing.com>
 
 ## Ogłoszenia
 
 Odpowiednik OLX w Hiszpanii:
 
-- <http://www.milanuncios.com>
-  - <http://www.vibbo.com>
+- <http://milanuncios.com>
+  - <http://vibbo.com>
 
 ## Porównywanie usług
 
 - <http://kelisto.es>
 
-
 ## Praca
 
-- <http://www.infojobs.net>
+- <http://infojobs.net>
 - <http://glassdoor.com>
 - <http://es.indeed.com>
 - <http://tecnoempleo.com>
@@ -53,12 +57,12 @@ Odpowiednik OLX w Hiszpanii:
 
 Odpowiednik Allegro w Hiszpanii:
 
-- <http://www.amazon.es>
-- <http://www.ebay.es>
+- <http://amazon.es>
+- <http://ebay.es>
 
 {% comment %}
 | Polska strona   |      Are      |  Cool |
-|-----------------|:-------------:|------:|
+|-----------------|---------------|-------|
 | Allegro.pl      |  left-aligned | $1600 |
 | col 2 is |    centered   |   $12 |
 | col 3 is | right-aligned |    $1 |
@@ -66,9 +70,16 @@ Odpowiednik Allegro w Hiszpanii:
 
 ## Wiadomości
 
-| Polska strona        | Po hiszpańsku       | Po angielsku                |
-|:--------------------:|:-------------------:|:---------------------------:|
+| Polska strona        | Po hiszpańsku       | Hiszpańskie po angielsku    |
+|----------------------|---------------------|-----------------------------|
 | <http://wyborcza.pl> | <http://elpais.com> | <http://english.elpais.com> |
+|  | <http://elpais.com> |  |
+
+### Wiadomości lokalne
+
+| Polska strona        | Po hiszpańsku       | Hiszpańskie po angielsku    |
+|----------------------|---------------------|-----------------------------|
+| <http://dziennikbaltycki.pl> | <http://diariosur.es> | <http://surinenglish.com> |
 
 
 ## Zakupy
@@ -79,25 +90,39 @@ Odpowiednik Allegro w Hiszpanii:
 
 ### Spożywcze
 
+| Polska strona         | Hiszpańska               |
+|--------------------   |---------------------------|
+| <http://biedronka.pl> | <http://mercadona.es> |
+| <http://lidl.pl> | <http://lidl.es> |
+| <http://auchan.pl> | <http://alcampo.es> |
+
 - <http://mercadona.es>
   - <http://tienda.mercadona.es>
   - <http://telecompra.mercadona.es>
-- <http://lidl.es>
 
-### 
+### Przemysłowe, AGD, RTV
 
-| Polska strona        | Po hiszpańsku               |
-|--------------------|---------------------------|
+| Polska strona        | Hiszpańska               |
+|-------------------|---------------------------|
 | <http://lidl-sklep.pl> | <http://lidl.es/es/onlineshop> |
+| <http://mediamarkt.pl> | <http://mediamarkt.es> |
 
 ## Zdrowie
 
 ### Krwiodawstwo / Donación de sangre
 
-| Polska strona        | Po hiszpańsku               |
-|:--------------------:|:---------------------------:|
-| <http://krew.gda.pl> | <http://donantesmalaga.org> |
+| Polska strona        | Hiszpańska                  |
+|----------------------|-----------------------------|
+| <http://krew.gda.pl> | <http://donantesmalaga.org> <https://juntadeandalucia.es/temas/salud/servicios/donacion-sangre.html> |
 | <http://krwiodawcy.org> | <http://fedsang.org> |
 
+
+## Zwierzęta
+
+### Schroniska dla zwierząt
+
+| Polska strona        | Hiszpańska                  |
+|----------------------|-----------------------------|
+| <http://> | <http://schroniskopromyk.pl> |
 
 {% include _autolink_pl.md %}
