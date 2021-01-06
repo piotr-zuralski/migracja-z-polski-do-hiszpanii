@@ -8,6 +8,12 @@ permalink: /pl/podstawy/dzialalnosc-gospodarcza.html
 
 # Gdziałalność gospodarcza
 
+
+
+## EUGO
+
+
+
 - <https://prawohiszpanskie.pl/jednoosobowa-dzialalnosc-gospodarcza-w-hiszpanii/>
 
 {% include _autolink_pl.md %}

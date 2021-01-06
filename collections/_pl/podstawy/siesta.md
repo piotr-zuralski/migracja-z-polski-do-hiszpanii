@@ -1,14 +1,14 @@
 ---
 published: true
-date: 2020-12-17 11:34
-slug: podstawy/numer-nie
-ref: dependencies-nie
-permalink: /pl/podstawy/numer-nie.html
+date: 2021-01-03 11:34
+slug: podstawy/siesta
+ref: siesta
+permalink: /pl/podstawy/siesta.html
 lang: pl-PL
-title: Numer NIE
+title: Siesta
 ---
 
-# Numer NIE
+# Siesta
 
 
 

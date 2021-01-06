@@ -73,7 +73,9 @@ Odpowiednik Allegro w Hiszpanii:
 | Polska strona        | Po hiszpańsku       | Hiszpańskie po angielsku    |
 |----------------------|---------------------|-----------------------------|
 | <http://wyborcza.pl> | <http://elpais.com> | <http://english.elpais.com> |
-|  | <http://elpais.com> |  |
+|  | <http://elmundo.es> |  |
+|  | <http://es.euronews.com/> |  |
+| <http://dw.com/pl/> | <http://dw.com/es/> |  |
 
 ### Wiadomości lokalne
 
@@ -83,10 +85,6 @@ Odpowiednik Allegro w Hiszpanii:
 
 
 ## Zakupy
-
-### AGD, RTV
-
-- <http://mediamarkt.es>
 
 ### Spożywcze
 
@@ -99,6 +97,13 @@ Odpowiednik Allegro w Hiszpanii:
 - <http://mercadona.es>
   - <http://tienda.mercadona.es>
   - <http://telecompra.mercadona.es>
+
+### Meble, wyposażenie domu
+
+| Polska strona | Hiszpańska |
+|---------------|------------|
+| <http://ikea.pl> | <http://ikea.es> |
+| <http://jysk.pl> | <http://jysk.es> |
 
 ### Przemysłowe, AGD, RTV
 
