@@ -1,0 +1,178 @@
+encoding: "utf-8"
+timezone: Europe/Warsaw
+lang: en-GB
+lsi: true
+safe: false
+incremental: true
+disable_disk_cache: false
+# environment: development
+# environment: production
+
+markdown: kramdown
+markdown_ext: "md"
+# markdown: CommonMark
+# commonmark:
+#   options: ["SMART", "FOOTNOTES"]
+#   extensions: ["strikethrough", "autolink", "table"]
+
+github_username: "piotr-zuralski"
+repository: "piotr-zuralski/migracja-z-polski-do-hiszpanii"
+author: "Piotr Żuralski"
+# baseurl: "/migracja-z-polski-do-hiszpanii" # the subpath of your site, e.g. /blog
+
+title: "Migracja z Polski do Hiszpanii"
+description: "Informacje na temat migracji z Polski do Hiszpanii, emigracji z Polski"
+
+languages: ["en", "pl"]
+defaultLang: pl
+exclude_from_localizations: ["files", "assets", "resources"]
+
+collections:
+  pl:
+    output: true
+    lang:    pl-PL
+    locale:  pl
+    permalink: /pl/:slug
+    # permalink: pl/:title:output_ext
+  en:
+    output: true
+    lang:      en-GB
+    locale:    en
+    permalink: /en/:slug
+    # permalink: en/:title:output_ext
+
+collections_dir: collections
+
+# github
+# includes_dir: ./src/_includes
+# local
+# includes_dir: _includes
+# source:       ./src/
+
+# plugins_dir: _plugins
+# layouts_dir: _layouts
+# data_dir: _data
+# plugins_dir         : ./src/_plugins
+# layouts_dir         : ./src/_layouts
+# data_dir            : ./src/_data
+
+twitter:
+  username: piotr_zuralski
+
+webmaster_verifications:
+  google: x_sZsZidR01cJyzgbqip2AHTGLgAvs-8f0razmbHUpM
+  bing: 057036BF9DB13D64C6CA4552C61AC17A
+#  alexa: 1234
+#  yandex: 1234
+#  baidu: 1234
+
+# Filtering Content
+show_drafts: false
+limit_posts: 0
+future:      false
+published:   false
+# Unpublished - Render posts that were marked as unpublished.
+unpublished: false
+
+defaults:
+  -
+    scope:
+      path:      "assets/css/*"
+    values:
+      sitemap:   false
+      permalink: pretty
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+#      permalink: /:locale/:categories/:title:output_ext
+      layout: "default"
+      author: "Piotr Żuralski"
+      excerpt_separator: "<!--more-->"
+      published: false
+  -   scope:
+        path: "_pages/"
+        type: "pages"
+      values:
+        layout:    "default"
+  -
+    scope:
+      path: _pages/en
+      type: pages
+    values:
+      layout: "page"
+      lang:      en-GB
+      locale:    en
+      permalink: /{:locale}/{:slug}{:output_ext}
+  #     # categories: ""
+  #     # permalink:  "/:locale/:categories/:title:output_ext"
+  -
+    scope:
+      path: _pages/pl
+      type: "pages"
+    values:
+      layout: "page"
+      lang:    pl-PL
+      locale:  pl
+      permalink: /{:locale}/{:slug}{:output_ext}
+  # -
+  #   scope:
+  #     path: "_pages/es"
+  #     type: "pages"
+  #   values:
+  #     layout: "page"
+  #     lang:      es-ES
+  #     locale:    es
+  # -
+  #   scope:
+  #     path: "posts"
+  #     type: "posts"
+  #   values:
+  #     layout: "post"
+  #     lang:      en-GB
+  #     locale:    en
+  #     # categories: ""
+  #     # permalink:  "/:locale/:categories/:title:output_ext"
+  # -
+  #   scope:
+  #     path: "projects"
+  #     type: "pages"
+  #   values:
+  #     layout: "project"
+  #     lang:      en-GB
+  #     locale:    en
+  #     # categories: ""
+  #     # permalink:  "/:locale/:categories/:title:output_ext"
+
+exclude:
+  - ".github/"
+  - ".history/"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "node_modules"
+  - "TODO.md"
+  - "README.md"
+  - "LICENSE"
+  - "LICENSE.md"
+  - "Makefile"
+  - ".jekyll-cache"
+  - ".jekyll-metadata"
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+include:
+  - _pages
+
+plugins:
+  - jekyll-commonmark
+  - jekyll-include-cache
+  - jekyll-archives
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-time-to-read
+  - jekyll-redirect-from
+  - jekyll-last-modified-at
+  - jekyll-paginate
